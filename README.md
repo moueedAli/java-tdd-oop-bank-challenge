@@ -12,7 +12,7 @@
 
 ## Introduction
 
-It's time to flex your programming skills. There are no classes or tests included in this repository to get your started, but you will find the usual `../java/com/booleanuk/core` directories to place your classes and tests in.
+It's time to flex your programming skills. There are no classes or tests included in this repository to get you started, but you will find the usual `../java/com/booleanuk/core` directories to place your classes and tests in.
 
 Your task is to use everything you've learned to build a small banking application.
 
