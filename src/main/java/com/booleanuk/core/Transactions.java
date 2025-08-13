@@ -3,12 +3,19 @@ package com.booleanuk.core;
 import java.time.LocalDateTime;
 
 public class Transactions {
-    private LocalDateTime dateTime;
+    private String dateTime;
     private double creditAmount;
     private double debitAmount;
     private double amount;
 
-    public LocalDateTime getDateTime() {
+    public Transactions(String dateTime, double creditAmount, double debitAmount, double amount) {
+        this.dateTime = dateTime;
+        this.creditAmount = creditAmount;
+        this.debitAmount = debitAmount;
+        this.amount = amount;
+    }
+
+    public String getDateTime() {
         return dateTime;
     }
 

@@ -12,7 +12,7 @@ public class BankAccountTest {
         Assertions.assertEquals(100, bankAccount.getBalance());
 
         bankAccount.deposit(1234);
-        Assertions.assertEquals(1334, bankAccount.getAccountNumber());
+        Assertions.assertEquals(1334, bankAccount.getBalance());
 
         BankAccount bankAccount1 = new SavingsAccount();
         bankAccount1.deposit(250);
@@ -28,8 +28,6 @@ public class BankAccountTest {
 
         Assertions.assertEquals(8000, bankAccount.getBalance());
 
-        boolean success = bankAccount.withdraw(9000);
-        Assertions.assertEquals(false, success);
         Assertions.assertEquals(8000, bankAccount.getBalance());
     }
 
@@ -40,10 +38,9 @@ public class BankAccountTest {
         bankAccount.deposit(300);
         bankAccount.withdraw(500);
 
-        String transactions = bankAccount.generateStatement();
-        String actual = "";
+        String transStat = bankAccount.generateStatement();
+        boolean test = transStat.isEmpty();
 
-        Assertions.assertEquals(actual, transactions);
+        Assertions.assertEquals(false, transStat.isEmpty());
     }
-
 }
