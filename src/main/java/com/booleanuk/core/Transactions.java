@@ -1,7 +1,5 @@
 package com.booleanuk.core;
 
-import java.time.LocalDateTime;
-
 public class Transactions {
     private String dateTime;
     private double creditAmount;
