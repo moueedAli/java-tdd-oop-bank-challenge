@@ -23,4 +23,12 @@ public class Overdraft {
         }
         return approved;
     }
+
+    public double getMAX_OVERDRAFT() {
+        return MAX_OVERDRAFT;
+    }
+
+    public void setMAX_OVERDRAFT(double MAX_OVERDRAFT) {
+        this.MAX_OVERDRAFT = MAX_OVERDRAFT;
+    }
 }
